@@ -3,6 +3,7 @@
 
 html {
     font-size: clamp(0.1rem, 0.7rem + 1.0vw, 1rem);
+    line-height: 1.2;
 }
 
 @media (max-width: 37em){
@@ -11,9 +12,18 @@ html {
         background-color: hsl(30, 38%, 92%);
     }
     
+    article p {
+        font-size: 14px;
+        color: hsl(228, 12%, 48%);
+    }
+
     h1 {
+        font-family: "Fraunces", serif; 
+    }
+
+    article h1, h1 {
+        font-size: 1.7em;
         font-family: "Fraunces", serif;
-        margin-top: 5px;
     }
     
     .card {
@@ -42,20 +52,18 @@ html {
         padding-top: 0;
     }
     
-    p {
-        font-size: 14px;
-    }
-    
     .price {
         display: flex;
         gap: 20px;
+        align-items: center;
+        color: hsl(228, 12%, 48%);
     }
     
     .discounted-price {
         color: hsl(158, 36%, 37%);
     }
     
-    button {
+    .btn {
         background-color: hsl(158, 36%, 37%);
         color: hsl(0, 0%, 100%);
         border: none;
@@ -64,6 +72,11 @@ html {
         width: 90%;
     }
     
+    .btn:hover {
+        background-color: hsl(212, 21%, 14%);
+        cursor: pointer;
+    }
+
     .cart {
         margin-right: 10px;
     }
@@ -74,12 +87,12 @@ html {
         font-family: "Montserrat", serif;
         background-color: hsl(30, 38%, 92%);
     }
-    
-    h1 {
+
+    article h1, h1 {
         font-family: "Fraunces", serif;
-        margin-top: 5px;
+        font-size: 1.7em;
     }
-    
+
     .card {
         display: flex;
         margin: 100px auto;
@@ -107,26 +120,34 @@ html {
         padding: 10px;
     }
     
-    p {
+    article p {
         font-size: 14px;
+        color: hsl(228, 12%, 48%);
     }
     
     .price {
         display: flex;
         gap: 20px;
+        align-items: center;
+        color: hsl(228, 12%, 48%);
     }
     
     .discounted-price {
         color: hsl(158, 36%, 37%);
     }
     
-    button {
+    .btn {
         background-color: hsl(158, 36%, 37%);
         color: hsl(0, 0%, 100%);
         border: none;
         border-radius: 10px;
         padding: 15px 50px 15px 50px;
         width: 90%;
+    }
+
+    .btn:hover {
+        background-color: hsl(212, 21%, 14%);
+        cursor: pointer;
     }
     
     .cart {
